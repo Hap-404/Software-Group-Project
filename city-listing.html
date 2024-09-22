@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./city-listing.css" />
+    <script src="https://kit.fontawesome.com/f3240296be.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="city-listing">
+      <section class="navigation-parent">
+        <div class="main">
+          <div class="container7">
+              <div class="navbar7">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="./about us/main.html">About Us</a></li>
+                      <li><a href="https://allevents.in/ahmedabad/ahmedabad-startup-networking-event-invite-only-by-ay-ventures/10000977585553707">popular Event's</a></li>
+                      <li><a href="city-listing.html">Location</a></li>
+                      <li><a href="./contect us/contect.html">Contact Us</a></li>
+                  </ul>
+                  <img src="./Img/sd.png" class="logo" alt="Logo" onclick="toggelMenu()">
+                  <div class="submenuwapper7" >
+                      <div class="submenu7" id="menu7">
+                          <div class="userinfo7">
+                              <img src="./Img/sd.png" alt="User Image">
+                              <h2>Dhrumil Patel</h2>
+                          </div>
+                          <a href="my-profile.html" class="sub-menu-list7">Personal Detail</a>
+                          <a href="./about us/main.html" class="sub-menu-list7">About Us</a>
+                          <a href="logout.html" class="sub-menu-list7">Log Out</a>
+                      </div>
+                  </div>
+              </div> <!-- Closing tag for navbar -->
+          </div> <!-- Closing tag for container -->
+      </div> <!-- Closing tag for main -->
+        <div class="frame-wrapper2">
+          <div class="page-header-parent">
+            <div class="page-header">
+              <h3 class="location-of-hostel">Location of Hostel in Gujarat</h3>
+              <div class="activities-found">49 activities found</div>
+            </div>
+            <div class="container20">
+              <div class="row">
+                <form id="search-form" onsubmit="event.preventDefault(); search();">
+                <input type="text" name="input-box" id="input-box" placeholder="Search...."  onkeyup="search()">
+                
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+              </div>
+              <!-- <div class="slidebar">
+                <div class="sidehead">
+                  <div class="dots">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle" style="color: black;"></i>
+                    <i class="fa-solid fa-circle"></i>
+                  </div>
+                  <hr style="margin: 15px; border: 1px solid white;">
+                </div>
+                <div class="sidebody" style="height: 69vh;">
+                  <div class="searchbar">
+                    <input placeholder="Search...." id="searchBar" name="searchBar" type="text">
+                    <h2> hello </h2>
+                  </div>
+                </div>
+              </div>
+              <div class="data">
+                    
+              </div> -->
+            </div>
+            <div class="container9">
+              <div class="filter-button">
+                <button class= "active" data-name="all">Show all</button>
+                <button data-name="Ahmedabad" data-name="Ahmedabad">Satellite</button>
+                <button data-name="Rajkot" >Thaltej</button>
+                <button data-name="shilaj" >vastrapur</button>
+                <button data-name="ambreli" >navrangpura</button>
+                <button data-name="mandvi" >maninagar</button>
+                <button data-name="Prahlad Nagar" >Prahlad Nagar</button>
+              </div>
+            </div>
+            <!-- <div class="filters">
+              <div class="sort-filter">
+                <div class="sort-by-wrapper">
+                  <a class="sort-by">Sort by:</a>
+                </div>
+                <div class="popularity-filter">
+                  
+                    <a class="popularity">Facilites</a>
+                    <div class="dropdownbtn">
+                      <ul>
+                        <li>pool</li>
+                        <li>kitchen</li>
+                        <li>garden</li>
+                      </ul>
+                    </div>
+                  
+                  <div class="rating-elements-wrapper">
+                    <img
+                      class="ant-designcaret-down-outlined-icon6"
+                      alt=""
+                      src="./public/antdesigncaretdownoutlined.svg"
+                    />
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="date-filter">
+          <div class="date-filter-child"></div>
+          <div class="calendar-filter">
+            <div class="footer-links">
+              <div class="date-labels">
+                <div class="rectangle-parent34">
+                  <div class="frame-child125"></div>
+                  <div class="availability-filter">
+                    <div class="availability-wrapper">
+                      <b class="availability">Availability</b>
+                    </div>
+                    <div class="availability-divider"></div>
+                  </div>
+                  <div class="from-to-labels">
+                    <div class="date-label-pair">
+                      <b class="from1">From</b>
+                      <input type="date" name="begin" size="30px" placeholder="dd-mm-yyyy" 
+                            value="" min="1997-01-01" max="2030-12-31">
+                    </div>
+                  </div>
+                  <div class="from-to-labels1">
+                    <div class="date-label-pair">
+                      <b class="to1">To</b>
+                      <input type="date" name="begin" size="30px" placeholder="dd-mm-yyyy" 
+                            value="" min="1997-01-01" max="2030-12-31">
+                    </div>
+                  </div>
+                  <div class="from-to-labels">
+                    <button class="check-container">
+                      <b class="check-availability">check availability</b>
+                    </button>
+                  </div>
+                </div>
+                <div class="rectangle-parent35">
+                  <div class="frame-child126"></div>
+                  <div class="destination-dropdown">
+                    <div class="destination-label">
+                      <div class="theme-parent">
+                        <b class="theme">Price Range</b>
+                        <div class="rating-elements-wrapper">
+                          <img
+                            class="ant-designcaret-down-outlined-icon7"
+                            alt=""
+                            src="./public/antdesigncaretdownoutlined.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="availability-divider"></div>
+                  </div>
+                  <div class="availability-wrapper">
+                    <div class="theme-options-list1">
+                      
+                      <input class="active1" data-list="all" id="rectangle" name="rectangle" value="rectangle"  type="checkbox" />
+                      
+                      <input data-list="30" type="checkbox" />
+
+                      <input data-list="35" type="checkbox" />
+
+                      <input data-list="40" type="checkbox" />
+
+                      <input data-list="45" type="checkbox" />
+                    </div>
+                    <div class="container21">
+                      <div class="themecontainer">
+                        <p class="multiday">show All</p>
+                        <p class="multiday">Rs.20000</p>
+                        <p class="multiday">Rs.40000</p>
+                        <p class="multiday">Rs.60000</p>
+                        <p class="multiday">Rs.80000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="show-destinations-button">
+                    <!-- <b class="show-more-destinations">Show More Destinations</b> -->
+                  </div>
+                </div>
+                <div class="rectangle-parent36">
+                  <div class="frame-child127"></div>
+                  <div class="frame-wrapper4">
+                    <div class="theme-parent">
+                      <b class="duration1">Duration</b>
+                      <div class="rating-elements-wrapper">
+                        <img
+                          class="ant-designcaret-down-outlined-icon7"
+                          alt=""
+                          src="./public/antdesigncaretdownoutlined.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="availability-divider"></div>
+                  <div class="duration-options">
+                    <div class="hours-filter">
+                      <div class="hours-options-list-wrapper">
+                        <div class="theme-options-list">
+                          <input class="active2" type="checkbox" />
+
+                          <input class="rectangle-input" type="checkbox" />
+
+                          <input class="rectangle-input" type="checkbox" />
+
+                          <input class="rectangle-input" type="checkbox" />
+
+                          <input class="rectangle-input" type="checkbox" />
+                        </div>
+                      </div>
+                      <div class="hours-3-5-hours-container">
+                        <p class="multi-day">Show All</p>
+                        <p class="multi-day">2 months</p>
+                        <p class="multi-day">4 months</p>
+                        <p class="multi-day">5 months</p>
+                        <p class="multi-day">6 months</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="result-list" id="result-list">
+                <div class="result-items">
+                    <div class="activitycard" onclick="myFunction1()" data-name="Ahmedabad" data-list="30">
+                      <div class="rectangle-parent37">
+                        <div class="content-wrapper-child"></div>
+                        <div class="content-wrapper-child"></div>
+                        <div class="rectangle-parent38">
+                          <img
+                            class="frame-child130"
+                            alt=""
+                            src="./public/rectangle-1292@2x.png"
+                          />
+
+                          <b class="ghatlodia">Ghatlodia</b>
+                          <b class="b17">$35.00</b>
+                          <div class="per-person22">per person</div>
+                          <div class="months">2 Months</div>
+                          <img
+                            class="vector-icon45"
+                            alt=""
+                            src="./public/vector2.svg"
+                          />
+
+                          <div class="frame-child131"></div>
+                          <div class="transport">Transport</div>
+                          <img
+                            class="vector-icon46"
+                            alt=""
+                            src="./public/vector3.svg"
+                          />
+
+                          <div class="frame-child131"></div>
+                          <div class="student-plan22">Student Plan</div>
+                          <img
+                            class="vector-icon47"
+                            alt=""
+                            src="./public/vector4.svg"
+                          />
+
+                          <div class="water-activities-wrapper">
+                            <div class="water-activities">Water Activities</div>
+                          </div>
+                          <div class="frame-child131"></div>
+                          <img
+                            class="frame-child134"
+                            alt=""
+                            src="./public/group-229.svg"
+                          />
+
+                          <div class="reviews28">(584 reviews)</div>
+                          <div class="content-wrapper-child"></div>
+                          <div class="content-wrapper-child"></div>
+                          <div class="content-wrapper-child"></div>
+                          <div class="image-parent">
+                            <img
+                              class="image-icon3"
+                              loading="lazy"
+                              alt=""
+                              src="./Img/2022-03-07.jpg"
+                            />
+
+                            <div class="result-details">
+                              <div class="title-elements-parent">
+                                <div class="title-elements">
+                                 
+                                  <h3 class="ghatlodia2">Sky Bule Hostel</h3>
+                                  <div class="date-details">
+                                    <div class="available-icon-wrapper">
+                                      <img
+                                        class="available-icon"
+                                        alt=""
+                                        src="./public/vector2.svg"
+                                      />
+                                    </div>
+                                    <div class="months-wrapper">
+                                      <div class="months1">1 Months</div>
+                                    </div>
+                                    <div class="rating-elements-wrapper">
+                                      <div class="rating-elements">
+                                        <div class="rating-indicator"></div>
+                                        <img
+                                          class="rating-icon"
+                                          alt=""
+                                          src="./public/vector3.svg"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="transport-details-parent">
+
+                                  <div class="transport-info">
+                                    <div class="transport-wrapper">
+                                      <div class="transport1">Transport</div>
+                                    </div>
+                                    <div class="rating-elements-wrapper">
+                                      <div class="plan-icon-details">
+                                        <div class="rating-indicator"></div>
+                                        <img
+                                          class="plan-icon1"
+                                          alt=""
+                                          src="./public/vector4.svg"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="student-plan23">Student Plan</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="price5">
+                            <div class="price-background">
+                              <b class="price-placeholder">Rs.20000</b>
+                              <div class="price-value">
+                                <div class="per-person24">per person</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activitycard" onclick="myFunction()" data-name="Ahmedabad" data-list="30">
+                      <div class="card-background">
+                        <div class="content-wrapper-child"></div>
+                        <div class="content-wrapper-child"></div>
+                        <div class="content-wrapper-child"></div>
+                        <div class="content-wrapper-child"></div>
+                        <div class="card-container">
+                          <img
+                            class="card-background-icon"
+                            loading="lazy"
+                            alt=""
+                            src="./public/rectangle-1292@2x.png"
+                          />
+
+                          <div class="result-details">
+                            <div class="title-elements-parent">
+                              <div class="title-elements">
+                               
+                                <h3 class="ghatlodia2">MAHADEV BOY'S Hostel</h3>
+                                <div class="date-details">
+                                  <div class="available-icon-wrapper">
+                                    <img
+                                      class="date-icon"
+                                      alt=""
+                                      src="./public/vector2.svg"
+                                    />
+                                  </div>
+                                  <div class="months-wrapper">
+                                    <div class="months2">2 Months</div>
+                                  </div>
+                                  <div class="rating-elements-wrapper">
+                                    <div class="rating-elements">
+                                      <div class="valid-date-background"></div>
+                                      <img
+                                        class="valid-date-icon"
+                                        alt=""
+                                        src="./public/vector3.svg"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="transport-details-parent">
+                                
+                                <div class="transport-info">
+                                  <div class="transport-wrapper">
+                                    <div class="transport2">Transport</div>
+                                  </div>
+                                  <div class="rating-elements-wrapper">
+                                    <div class="plan-icon-details">
+                                      <div class="valid-date-background"></div>
+                                      <img
+                                        class="plan-tick-icon"
+                                        alt=""
+                                        src="./public/vector4.svg"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="student-plan24">Student Plan</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="price-background-wrapper">
+                          <div class="price-background">
+                            <b class="price-placeholder" >Rs.20000</b>
+                            <div class="price-value">
+                              <div class="per-person26">per person</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  <div class="activitycard" onclick="myFunction2()" data-name="Ahmedabad" data-list="35">
+                    <div class="rectangle-parent40">
+                      <div class="frame-child143"></div>
+                      <div class="frame-child143"></div>
+                      <div class="frame-child143"></div>
+                      <div class="result">
+                        <div class="content-wrapper1">
+                          <div class="content-wrapper-child"></div>
+                          <div class="card-container">
+                            <img
+                              class="card-background-icon"
+                              loading="lazy"
+                              alt=""
+                              src="./Img/bed-142516_1280.jpg"
+                            />
+
+                            <div class="result-details">
+                              <div class="title-elements-parent">
+                                <div class="title-elements">
+                                 
+                                  <h3 class="ghatlodia2">The Wagad Villa</h3>
+                                  <div class="date-details">
+                                    <div class="available-icon-wrapper">
+                                      <img
+                                        class="date-icon"
+                                        alt=""
+                                        src="./public/vector2.svg"
+                                      />
+                                    </div>
+                                    <div class="months-wrapper">
+                                      <div class="months2">3 Months</div>
+                                    </div>
+                                    <div class="rating-elements-wrapper">
+                                      <div class="rating-elements">
+                                        <div class="valid-date-background"></div>
+                                        <img
+                                          class="valid-date-icon"
+                                          alt=""
+                                          src="./public/vector3.svg"
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="transport-details-parent">
+                                  
+                                  <div class="transport-info">
+                                    <div class="transport-wrapper">
+                                      <div class="transport2">Transport</div>
+                                    </div>
+                                    <div class="rating-elements-wrapper">
+                                      <div class="plan-icon-details">
+                                        <div class="valid-date-background"></div>
+                                        <img
+                                          class="plan-tick-icon"
+                                          alt=""
+                                          src="./public/vector4.svg"
+                                        />
+                                      </div>
+                                    </div>
+                                    <div class="student-plan24">Student Plan</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                          <div class="price-background-wrapper">
+                            <div class="price-background">
+                              <b class="price-placeholder">Rs.40000</b>
+                              <div class="price-value">
+                                <div class="per-person26">2 adults</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="activitycard" onclick="myFunction3()" data-name="Ahmedabad" data-list="40">
+                    <div class="card-background">
+                      <div class="content-wrapper-child"></div>
+                      <div class="content-wrapper-child"></div>
+                      <div class="content-wrapper-child"></div>
+                      <div class="content-wrapper-child"></div>
+                      <div class="card-container">
+                        <img
+                          class="card-background-icon"
+                          loading="lazy"
+                          alt=""
+                          src="./Img/2021-11-01.jpg"
+                        />
+
+                        <div class="result-details">
+                          <div class="title-elements-parent">
+                            <div class="title-elements">
+                              
+                              <h3 class="ghatlodia2">Pritagsu  PG Service</h3>
+                              <div class="date-details">
+                                <div class="available-icon-wrapper">
+                                  <img
+                                    class="date-icon"
+                                    alt=""
+                                    src="./public/vector2.svg"
+                                  />
+                                </div>
+                                <div class="months-wrapper">
+                                  <div class="months2">4 Months</div>
+                                </div>
+                                <div class="rating-elements-wrapper">
+                                  <div class="rating-elements">
+                                    <div class="valid-date-background"></div>
+                                    <img
+                                      class="valid-date-icon"
+                                      alt=""
+                                      src="./public/vector3.svg"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="transport-details-parent">
+                            
+                              <div class="transport-info">
+                                <div class="transport-wrapper">
+                                  <div class="transport2">Transport</div>
+                                </div>
+                                <div class="rating-elements-wrapper">
+                                  <div class="plan-icon-details">
+                                    <div class="valid-date-background"></div>
+                                    <img
+                                      class="plan-tick-icon"
+                                      alt=""
+                                      src="./public/vector4.svg"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="student-plan24">Student Plan</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="price-background-wrapper">
+                        <div class="price-background">
+                          <b class="price-placeholder" >Rs.60000</b>
+                          <div class="price-value">
+                            <div class="per-person26">3 person</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="activitycard" onclick="myFunction4()" data-name="Rajkot" data-list="30">
+                  <div class="card-background">
+                    <div class="content-wrapper-child"></div>
+                    <div class="content-wrapper-child"></div>
+                    <div class="content-wrapper-child"></div>
+                    <div class="content-wrapper-child"></div>
+                    <div class="card-container">
+                      <img
+                        class="card-background-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./Img/2024-03-02.jpg"
+                      />
+
+                      <div class="result-details">
+                        <div class="title-elements-parent">
+                          <div class="title-elements">
+                            
+                            <h3 class="ghatlodia2">Sun Rise Hostel</h3>
+                            <div class="date-details">
+                              <div class="available-icon-wrapper">
+                                <img
+                                  class="date-icon"
+                                  alt=""
+                                  src="./public/vector2.svg"
+                                />
+                              </div>
+                              <div class="months-wrapper">
+                                <div class="months2">1 Months</div>
+                              </div>
+                              <div class="rating-elements-wrapper">
+                                <div class="rating-elements">
+                                  <div class="valid-date-background"></div>
+                                  <img
+                                    class="valid-date-icon"
+                                    alt=""
+                                    src="./public/vector3.svg"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="transport-details-parent">
+                          
+                            <div class="transport-info">
+                              <div class="transport-wrapper">
+                                <div class="transport2">Transport</div>
+                              </div>
+                              <div class="rating-elements-wrapper">
+                                <div class="plan-icon-details">
+                                  <div class="valid-date-background"></div>
+                                  <img
+                                    class="plan-tick-icon"
+                                    alt=""
+                                    src="./public/vector4.svg"
+                                  />
+                                </div>
+                              </div>
+                              <div class="student-plan24">Student Plan</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div class="price-background-wrapper">
+                      <div class="price-background">
+                        <b class="price-placeholder" >Rs.20000</b>
+                        <div class="price-value">
+                          <div class="per-person26">1 person</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="activitycard" onclick="myFunction5()" data-name="Rajkot" data-list="35">
+                <div class="card-background">
+                  <div class="content-wrapper-child"></div>
+                  <div class="content-wrapper-child"></div>
+                  <div class="content-wrapper-child"></div>
+                  <div class="content-wrapper-child"></div>
+                  <div class="card-container">
+                    <img
+                      class="card-background-icon"
+                      loading="lazy"
+                      alt=""
+                      src="./Img/2022-06-17.jpg"
+                    />
+
+                    <div class="result-details">
+                      <div class="title-elements-parent">
+                        <div class="title-elements">
+                          
+                          <h3 class="ghatlodia2">Prime Hostel</h3>
+                          <div class="date-details">
+                            <div class="available-icon-wrapper">
+                              <img
+                                class="date-icon"
+                                alt=""
+                                src="./public/vector2.svg"
+                              />
+                            </div>
+                            <div class="months-wrapper">
+                              <div class="months2">2 Months</div>
+                            </div>
+                            <div class="rating-elements-wrapper">
+                              <div class="rating-elements">
+                                <div class="valid-date-background"></div>
+                                <img
+                                  class="valid-date-icon"
+                                  alt=""
+                                  src="./public/vector3.svg"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="transport-details-parent">
+                        
+                          <div class="transport-info">
+                            <div class="transport-wrapper">
+                              <div class="transport2">Transport</div>
+                            </div>
+                            <div class="rating-elements-wrapper">
+                              <div class="plan-icon-details">
+                                <div class="valid-date-background"></div>
+                                <img
+                                  class="plan-tick-icon"
+                                  alt=""
+                                  src="./public/vector4.svg"
+                                />
+                              </div>
+                            </div>
+                            <div class="student-plan24">Student Plan</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="price-background-wrapper">
+                    <div class="price-background">
+                      <b class="price-placeholder" >Rs.40000</b>
+                      <div class="price-value">
+                        <div class="per-person26">2 person</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              <div class="activitycard" onclick="myFunction6()" data-name="Rajkot" data-list="40">
+                <div class="card-background">
+                  <div class="content-wrapper-child"></div>
+                  <div class="content-wrapper-child"></div>
+                  <div class="content-wrapper-child"></div>
+                  <div class="content-wrapper-child"></div>
+                  <div class="card-container">
+                    <img
+                      class="card-background-icon"
+                      loading="lazy"
+                      alt=""
+                      src="./Img/2021-11-01.jpg"
+                    />
+
+                    <div class="result-details">
+                      <div class="title-elements-parent">
+                        <div class="title-elements">
+                          
+                          <h3 class="ghatlodia2">udgam boys pg</h3>
+                          <div class="date-details">
+                            <div class="available-icon-wrapper">
+                              <img
+                                class="date-icon"
+                                alt=""
+                                src="./public/vector2.svg"
+                              />
+                            </div>
+                            <div class="months-wrapper">
+                              <div class="months2">4 Months</div>
+                            </div>
+                            <div class="rating-elements-wrapper">
+                              <div class="rating-elements">
+                                <div class="valid-date-background"></div>
+                                <img
+                                  class="valid-date-icon"
+                                  alt=""
+                                  src="./public/vector3.svg"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="transport-details-parent">
+                        
+                          <div class="transport-info">
+                            <div class="transport-wrapper">
+                              <div class="transport2">Transport</div>
+                            </div>
+                            <div class="rating-elements-wrapper">
+                              <div class="plan-icon-details">
+                                <div class="valid-date-background"></div>
+                                <img
+                                  class="plan-tick-icon"
+                                  alt=""
+                                  src="./public/vector4.svg"
+                                />
+                              </div>
+                            </div>
+                            <div class="student-plan24">Student Plan</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="price-background-wrapper">
+                    <div class="price-background">
+                      <b class="price-placeholder" >Rs.60000</b>
+                      <div class="price-value">
+                        <div class="per-person26">3 person</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="activitycard" onclick="myFunction7()" data-name="Rajkot" data-list="45">
+              <div class="card-background">
+                <div class="content-wrapper-child"></div>
+                <div class="content-wrapper-child"></div>
+                <div class="content-wrapper-child"></div>
+                <div class="content-wrapper-child"></div>
+                <div class="card-container">
+                  <img
+                    class="card-background-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./Img/Panchaaruit.jpg"
+                  />
+
+                  <div class="result-details">
+                    <div class="title-elements-parent">
+                      <div class="title-elements">
+                        
+                        <h3 class="ghatlodia2">shivam Hostel</h3>
+                        <div class="date-details">
+                          <div class="available-icon-wrapper">
+                            <img
+                              class="date-icon"
+                              alt=""
+                              src="./public/vector2.svg"
+                            />
+                          </div>
+                          <div class="months-wrapper">
+                            <div class="months2">6 Months</div>
+                          </div>
+                          <div class="rating-elements-wrapper">
+                            <div class="rating-elements">
+                              <div class="valid-date-background"></div>
+                              <img
+                                class="valid-date-icon"
+                                alt=""
+                                src="./public/vector3.svg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="transport-details-parent">
+                      
+                        <div class="transport-info">
+                          <div class="transport-wrapper">
+                            <div class="transport2">Transport</div>
+                          </div>
+                          <div class="rating-elements-wrapper">
+                            <div class="plan-icon-details">
+                              <div class="valid-date-background"></div>
+                              <img
+                                class="plan-tick-icon"
+                                alt=""
+                                src="./public/vector4.svg"
+                              />
+                            </div>
+                          </div>
+                          <div class="student-plan24">Student Plan</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-background-wrapper">
+                  <div class="price-background">
+                    <b class="price-placeholder" >Rs.80000</b>
+                    <div class="price-value">
+                      <div class="per-person26">4 person</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="activitycard" onclick="myFunction8()" data-name="shilaj" data-list="30">
+            <div class="card-background">
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="card-container">
+                <img
+                  class="card-background-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./Img/2023-04-03.jpg"
+                />
+
+                <div class="result-details">
+                  <div class="title-elements-parent">
+                    <div class="title-elements">
+                      
+                      <h3 class="ghatlodia2">Goverment Girl Hostel</h3>
+                      <div class="date-details">
+                        <div class="available-icon-wrapper">
+                          <img
+                            class="date-icon"
+                            alt=""
+                            src="./public/vector2.svg"
+                          />
+                        </div>
+                        <div class="months-wrapper">
+                          <div class="months2">1 Months</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="rating-elements">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="valid-date-icon"
+                              alt=""
+                              src="./public/vector3.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transport-details-parent">
+                    
+                      <div class="transport-info">
+                        <div class="transport-wrapper">
+                          <div class="transport2">Transport</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="plan-icon-details">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="plan-tick-icon"
+                              alt=""
+                              src="./public/vector4.svg"
+                            />
+                          </div>
+                        </div>
+                        <div class="student-plan24">Student Plan</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="price-background-wrapper">
+                <div class="price-background">
+                  <b class="price-placeholder" >Rs.20000</b>
+                  <div class="price-value">
+                    <div class="per-person26">1 person</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="activitycard" onclick="myFunction9()" data-name="shilaj" data-list="30">
+          <div class="card-background">
+            <div class="content-wrapper-child"></div>
+            <div class="content-wrapper-child"></div>
+            <div class="content-wrapper-child"></div>
+            <div class="content-wrapper-child"></div>
+            <div class="card-container">
+              <img
+                class="card-background-icon"
+                loading="lazy"
+                alt=""
+                src="./Img/2022-03-07.jpg"
+              />
+
+              <div class="result-details">
+                <div class="title-elements-parent">
+                  <div class="title-elements">
+                    
+                    <h3 class="ghatlodia2">Swaminarayan Girl Hostel</h3>
+                    <div class="date-details">
+                      <div class="available-icon-wrapper">
+                        <img
+                          class="date-icon"
+                          alt=""
+                          src="./public/vector2.svg"
+                        />
+                      </div>
+                      <div class="months-wrapper">
+                        <div class="months2">1 Months</div>
+                      </div>
+                      <div class="rating-elements-wrapper">
+                        <div class="rating-elements">
+                          <div class="valid-date-background"></div>
+                          <img
+                            class="valid-date-icon"
+                            alt=""
+                            src="./public/vector3.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transport-details-parent">
+                  
+                    <div class="transport-info">
+                      <div class="transport-wrapper">
+                        <div class="transport2">Transport</div>
+                      </div>
+                      <div class="rating-elements-wrapper">
+                        <div class="plan-icon-details">
+                          <div class="valid-date-background"></div>
+                          <img
+                            class="plan-tick-icon"
+                            alt=""
+                            src="./public/vector4.svg"
+                          />
+                        </div>
+                      </div>
+                      <div class="student-plan24">Student Plan</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="price-background-wrapper">
+              <div class="price-background">
+                <b class="price-placeholder" >Rs.20000</b>
+                <div class="price-value">
+                  <div class="per-person26">2 person</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="activitycard" onclick="myFunction10()" data-name="shilaj" data-list="30">
+        <div class="card-background">
+          <div class="content-wrapper-child"></div>
+          <div class="content-wrapper-child"></div>
+          <div class="content-wrapper-child"></div>
+          <div class="content-wrapper-child"></div>
+          <div class="card-container">
+            <img
+              class="card-background-icon"
+              loading="lazy"
+              alt=""
+              src="./Img/WhatsApp Image 2024-07-11 at 20.43.51_9aa4b11d.jpg"
+            />
+
+            <div class="result-details">
+              <div class="title-elements-parent">
+                <div class="title-elements">
+                  
+                  <h3 class="ghatlodia2">keshav nivas</h3>
+                  <div class="date-details">
+                    <div class="available-icon-wrapper">
+                      <img
+                        class="date-icon"
+                        alt=""
+                        src="./public/vector2.svg"
+                      />
+                    </div>
+                    <div class="months-wrapper">
+                      <div class="months2">3 Months</div>
+                    </div>
+                    <div class="rating-elements-wrapper">
+                      <div class="rating-elements">
+                        <div class="valid-date-background"></div>
+                        <img
+                          class="valid-date-icon"
+                          alt=""
+                          src="./public/vector3.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="transport-details-parent">
+                
+                  <div class="transport-info">
+                    <div class="transport-wrapper">
+                      <div class="transport2">Transport</div>
+                    </div>
+                    <div class="rating-elements-wrapper">
+                      <div class="plan-icon-details">
+                        <div class="valid-date-background"></div>
+                        <img
+                          class="plan-tick-icon"
+                          alt=""
+                          src="./public/vector4.svg"
+                        />
+                      </div>
+                    </div>
+                    <div class="student-plan24">Student Plan</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price-background-wrapper">
+            <div class="price-background">
+              <b class="price-placeholder" >Rs.20000</b>
+              <div class="price-value">
+                <div class="per-person26">per person</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="activitycard" onclick="myFunction11()" data-name="shilaj" data-list="45">
+      <div class="card-background">
+        <div class="content-wrapper-child"></div>
+        <div class="content-wrapper-child"></div>
+        <div class="content-wrapper-child"></div>
+        <div class="content-wrapper-child"></div>
+        <div class="card-container">
+          <img
+            class="card-background-icon"
+            loading="lazy"
+            alt=""
+            src="./Img/thumbnail.jpeg"
+          />
+
+          <div class="result-details">
+            <div class="title-elements-parent">
+              <div class="title-elements">
+                
+                <h3 class="ghatlodia2">Royal Hostel & PG</h3>
+                <div class="date-details">
+                  <div class="available-icon-wrapper">
+                    <img
+                      class="date-icon"
+                      alt=""
+                      src="./public/vector2.svg"
+                    />
+                  </div>
+                  <div class="months-wrapper">
+                    <div class="months2">2 Months</div>
+                  </div>
+                  <div class="rating-elements-wrapper">
+                    <div class="rating-elements">
+                      <div class="valid-date-background"></div>
+                      <img
+                        class="valid-date-icon"
+                        alt=""
+                        src="./public/vector3.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="transport-details-parent">
+              
+                <div class="transport-info">
+                  <div class="transport-wrapper">
+                    <div class="transport2">Transport</div>
+                  </div>
+                  <div class="rating-elements-wrapper">
+                    <div class="plan-icon-details">
+                      <div class="valid-date-background"></div>
+                      <img
+                        class="plan-tick-icon"
+                        alt=""
+                        src="./public/vector4.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="student-plan24">Student Plan</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price-background-wrapper">
+          <div class="price-background">
+            <b class="price-placeholder" >Rs.80000</b>
+            <div class="price-value">
+              <div class="per-person26">4 person</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="activitycard" onclick="myFunction12()" data-name="ambreli" data-list="30">
+    <div class="card-background">
+      <div class="content-wrapper-child"></div>
+      <div class="content-wrapper-child"></div>
+      <div class="content-wrapper-child"></div>
+      <div class="content-wrapper-child"></div>
+      <div class="card-container">
+        <img
+          class="card-background-icon"
+          loading="lazy"
+          alt=""
+          src="./Img/Screenshot_20220516-220738_Chrome.jpg"
+        />
+
+        <div class="result-details">
+          <div class="title-elements-parent">
+            <div class="title-elements">
+              
+              <h3 class="ghatlodia2">Mamta Hostel</h3>
+              <div class="date-details">
+                <div class="available-icon-wrapper">
+                  <img
+                    class="date-icon"
+                    alt=""
+                    src="./public/vector2.svg"
+                  />
+                </div>
+                <div class="months-wrapper">
+                  <div class="months2">1 Months</div>
+                </div>
+                <div class="rating-elements-wrapper">
+                  <div class="rating-elements">
+                    <div class="valid-date-background"></div>
+                    <img
+                      class="valid-date-icon"
+                      alt=""
+                      src="./public/vector3.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transport-details-parent">
+            
+              <div class="transport-info">
+                <div class="transport-wrapper">
+                  <div class="transport2">Transport</div>
+                </div>
+                <div class="rating-elements-wrapper">
+                  <div class="plan-icon-details">
+                    <div class="valid-date-background"></div>
+                    <img
+                      class="plan-tick-icon"
+                      alt=""
+                      src="./public/vector4.svg"
+                    />
+                  </div>
+                </div>
+                <div class="student-plan24">Student Plan</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="price-background-wrapper">
+        <div class="price-background">
+          <b class="price-placeholder" >Rs.20000</b>
+          <div class="price-value">
+            <div class="per-person26">per person</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="activitycard" onclick="myFunction13()" data-name="ambreli" data-list="30">
+  <div class="card-background">
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="card-container">
+      <img
+        class="card-background-icon"
+        loading="lazy"
+        alt=""
+        src="./Img/2019-08-07.jpg"
+      />
+
+      <div class="result-details">
+        <div class="title-elements-parent">
+          <div class="title-elements">
+            
+            <h3 class="ghatlodia2">Saral Girls P.G</h3>
+            <div class="date-details">
+              <div class="available-icon-wrapper">
+                <img
+                  class="date-icon"
+                  alt=""
+                  src="./public/vector2.svg"
+                />
+              </div>
+              <div class="months-wrapper">
+                <div class="months2">2 Months</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="rating-elements">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="valid-date-icon"
+                    alt=""
+                    src="./public/vector3.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="transport-details-parent">
+          
+            <div class="transport-info">
+              <div class="transport-wrapper">
+                <div class="transport2">Transport</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="plan-icon-details">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="plan-tick-icon"
+                    alt=""
+                    src="./public/vector4.svg"
+                  />
+                </div>
+              </div>
+              <div class="student-plan24">Student Plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-background-wrapper">
+      <div class="price-background">
+        <b class="price-placeholder" >Rs.20000</b>
+        <div class="price-value">
+          <div class="per-person26">per person</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="activitycard" onclick="myFunction14()" data-name="ambreli" data-list="40">
+  <div class="card-background">
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="card-container">
+      <img
+        class="card-background-icon"
+        loading="lazy"
+        alt=""
+        src="./Img/bed-142516_1280.jpg"
+      />
+
+      <div class="result-details">
+        <div class="title-elements-parent">
+          <div class="title-elements">
+            
+            <h3 class="ghatlodia2">krishna Hostel</h3>
+            <div class="date-details">
+              <div class="available-icon-wrapper">
+                <img
+                  class="date-icon"
+                  alt=""
+                  src="./public/vector2.svg"
+                />
+              </div>
+              <div class="months-wrapper">
+                <div class="months2">4 Months</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="rating-elements">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="valid-date-icon"
+                    alt=""
+                    src="./public/vector3.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="transport-details-parent">
+          
+            <div class="transport-info">
+              <div class="transport-wrapper">
+                <div class="transport2">Transport</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="plan-icon-details">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="plan-tick-icon"
+                    alt=""
+                    src="./public/vector4.svg"
+                  />
+                </div>
+              </div>
+              <div class="student-plan24">Student Plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-background-wrapper">
+      <div class="price-background">
+        <b class="price-placeholder" >Rs.60000</b>
+        <div class="price-value">
+          <div class="per-person26">3 person</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="activitycard" onclick="myFunction15()" data-name="ambreli" data-list="45">
+  <div class="card-background">
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="card-container">
+      <img
+        class="card-background-icon"
+        loading="lazy"
+        alt=""
+        src="./Img/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+      />
+
+      <div class="result-details">
+        <div class="title-elements-parent">
+          <div class="title-elements">
+            
+            <h3 class="ghatlodia2">Living Hostel - boys</h3>
+            <div class="date-details">
+              <div class="available-icon-wrapper">
+                <img
+                  class="date-icon"
+                  alt=""
+                  src="./public/vector2.svg"
+                />
+              </div>
+              <div class="months-wrapper">
+                <div class="months2">6 Months</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="rating-elements">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="valid-date-icon"
+                    alt=""
+                    src="./public/vector3.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="transport-details-parent">
+          
+            <div class="transport-info">
+              <div class="transport-wrapper">
+                <div class="transport2">Transport</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="plan-icon-details">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="plan-tick-icon"
+                    alt=""
+                    src="./public/vector4.svg"
+                  />
+                </div>
+              </div>
+              <div class="student-plan24">Student Plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-background-wrapper">
+      <div class="price-background">
+        <b class="price-placeholder" >Rs.80000</b>
+        <div class="price-value">
+          <div class="per-person26">4 person</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="activitycard" onclick="myFunction16()" data-name="mandvi" data-list="30">
+  <div class="card-background">
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="card-container">
+      <img
+        class="card-background-icon"
+        loading="lazy"
+        alt=""
+        src="./Img/2022-06-04.jpg"
+      />
+
+      <div class="result-details">
+        <div class="title-elements-parent">
+          <div class="title-elements">
+            
+            <h3 class="ghatlodia2">Gujar Kashatriya</h3>
+            <div class="date-details">
+              <div class="available-icon-wrapper">
+                <img
+                  class="date-icon"
+                  alt=""
+                  src="./public/vector2.svg"
+                />
+              </div>
+              <div class="months-wrapper">
+                <div class="months2">1 Months</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="rating-elements">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="valid-date-icon"
+                    alt=""
+                    src="./public/vector3.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="transport-details-parent">
+          
+            <div class="transport-info">
+              <div class="transport-wrapper">
+                <div class="transport2">Transport</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="plan-icon-details">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="plan-tick-icon"
+                    alt=""
+                    src="./public/vector4.svg"
+                  />
+                </div>
+              </div>
+              <div class="student-plan24">Student Plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-background-wrapper">
+      <div class="price-background">
+        <b class="price-placeholder" >Rs.20000</b>
+        <div class="price-value">
+          <div class="per-person26">per person</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="activitycard" onclick="myFunction17()" data-name="mandvi" data-list="35">
+  <div class="card-background">
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="card-container">
+      <img
+        class="card-background-icon"
+        loading="lazy"
+        alt=""
+        src="./Img/2021-10-20.jpg"
+      />
+
+      <div class="result-details">
+        <div class="title-elements-parent">
+          <div class="title-elements">
+            
+            <h3 class="ghatlodia2">ST BOYS hostel</h3>
+            <div class="date-details">
+              <div class="available-icon-wrapper">
+                <img
+                  class="date-icon"
+                  alt=""
+                  src="./public/vector2.svg"
+                />
+              </div>
+              <div class="months-wrapper">
+                <div class="months2">3 Months</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="rating-elements">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="valid-date-icon"
+                    alt=""
+                    src="./public/vector3.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="transport-details-parent">
+          
+            <div class="transport-info">
+              <div class="transport-wrapper">
+                <div class="transport2">Transport</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="plan-icon-details">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="plan-tick-icon"
+                    alt=""
+                    src="./public/vector4.svg"
+                  />
+                </div>
+              </div>
+              <div class="student-plan24">Student Plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-background-wrapper">
+      <div class="price-background">
+        <b class="price-placeholder" >Rs.40000</b>
+        <div class="price-value">
+          <div class="per-person26">2 person</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="activitycard" onclick="myFunction18()" data-name="mandvi" data-list="45">
+  <div class="card-background">
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="content-wrapper-child"></div>
+    <div class="card-container">
+      <img
+        class="card-background-icon"
+        loading="lazy"
+        alt=""
+        src="./Img/bedroom-413706_1280.jpg"
+      />
+
+      <div class="result-details">
+        <div class="title-elements-parent">
+          <div class="title-elements">
+            
+            <h3 class="ghatlodia2">shreemali soni hostel</h3>
+            <div class="date-details">
+              <div class="available-icon-wrapper">
+                <img
+                  class="date-icon"
+                  alt=""
+                  src="./public/vector2.svg"
+                />
+              </div>
+              <div class="months-wrapper">
+                <div class="months2">4 Months</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="rating-elements">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="valid-date-icon"
+                    alt=""
+                    src="./public/vector3.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="transport-details-parent">
+          
+            <div class="transport-info">
+              <div class="transport-wrapper">
+                <div class="transport2">Transport</div>
+              </div>
+              <div class="rating-elements-wrapper">
+                <div class="plan-icon-details">
+                  <div class="valid-date-background"></div>
+                  <img
+                    class="plan-tick-icon"
+                    alt=""
+                    src="./public/vector4.svg"
+                  />
+                </div>
+              </div>
+              <div class="student-plan24">Student Plan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-background-wrapper">
+      <div class="price-background">
+        <b class="price-placeholder" >Rs.80000</b>
+        <div class="price-value">
+          <div class="per-person26">4 person</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="activitycard" onclick="myFunction19()" data-name="mandvi" data-list="30">
+              <div class="card-background">
+                <div class="content-wrapper-child"></div>
+                <div class="content-wrapper-child"></div>
+                <div class="content-wrapper-child"></div>
+                <div class="content-wrapper-child"></div>
+                <div class="card-container">
+                  <img
+                    class="card-background-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./Img/bedroom-413706_1280.jpg"
+                  />
+
+                  <div class="result-details">
+                    <div class="title-elements-parent">
+                      <div class="title-elements">
+                        
+                        <h3 class="ghatlodia2">Ashok Hostel & pg</h3>
+                        <div class="date-details">
+                          <div class="available-icon-wrapper">
+                            <img
+                              class="date-icon"
+                              alt=""
+                              src="./public/vector2.svg"
+                            />
+                          </div>
+                          <div class="months-wrapper">
+                            <div class="months2">6 Months</div>
+                          </div>
+                          <div class="rating-elements-wrapper">
+                            <div class="rating-elements">
+                              <div class="valid-date-background"></div>
+                              <img
+                                class="valid-date-icon"
+                                alt=""
+                                src="./public/vector3.svg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="transport-details-parent">
+                      
+                        <div class="transport-info">
+                          <div class="transport-wrapper">
+                            <div class="transport2">Transport</div>
+                          </div>
+                          <div class="rating-elements-wrapper">
+                            <div class="plan-icon-details">
+                              <div class="valid-date-background"></div>
+                              <img
+                                class="plan-tick-icon"
+                                alt=""
+                                src="./public/vector4.svg"
+                              />
+                            </div>
+                          </div>
+                          <div class="student-plan24">Student Plan</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-background-wrapper">
+                  <div class="price-background">
+                    <b class="price-placeholder" >Rs.20000</b>
+                    <div class="price-value">
+                      <div class="per-person26">per person</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="activitycard" onclick="myFunction20()" data-name="Prahlad Nagar" data-list="30">
+            <div class="card-background">
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="card-container">
+                <img
+                  class="card-background-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./Img/unnamed (1).jpg"
+                />
+          
+                <div class="result-details">
+                  <div class="title-elements-parent">
+                    <div class="title-elements">
+                      
+                      <h3 class="ghatlodia2">AASHRAY PAYING GUEST</h3>
+                      <div class="date-details">
+                        <div class="available-icon-wrapper">
+                          <img
+                            class="date-icon"
+                            alt=""
+                            src="./public/vector2.svg"
+                          />
+                        </div>
+                        <div class="months-wrapper">
+                          <div class="months2">1 Months</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="rating-elements">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="valid-date-icon"
+                              alt=""
+                              src="./public/vector3.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transport-details-parent">
+                    
+                      <div class="transport-info">
+                        <div class="transport-wrapper">
+                          <div class="transport2">Transport</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="plan-icon-details">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="plan-tick-icon"
+                              alt=""
+                              src="./public/vector4.svg"
+                            />
+                          </div>
+                        </div>
+                        <div class="student-plan24">Student Plan</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="price-background-wrapper">
+                <div class="price-background">
+                  <b class="price-placeholder" >Rs.20000</b>
+                  <div class="price-value">
+                    <div class="per-person26">per person</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="activitycard" onclick="myFunction21()" data-name="Prahlad Nagar" data-list="35">
+            <div class="card-background">
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="card-container">
+                <img
+                  class="card-background-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./Img/2023-09-28.jpg"
+                />
+          
+                <div class="result-details">
+                  <div class="title-elements-parent">
+                    <div class="title-elements">
+                      
+                      <h3 class="ghatlodia2">Bachelors Home PG</h3>
+                      <div class="date-details">
+                        <div class="available-icon-wrapper">
+                          <img
+                            class="date-icon"
+                            alt=""
+                            src="./public/vector2.svg"
+                          />
+                        </div>
+                        <div class="months-wrapper">
+                          <div class="months2">2 Months</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="rating-elements">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="valid-date-icon"
+                              alt=""
+                              src="./public/vector3.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transport-details-parent">
+                    
+                      <div class="transport-info">
+                        <div class="transport-wrapper">
+                          <div class="transport2">Transport</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="plan-icon-details">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="plan-tick-icon"
+                              alt=""
+                              src="./public/vector4.svg"
+                            />
+                          </div>
+                        </div>
+                        <div class="student-plan24">Student Plan</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="price-background-wrapper">
+                <div class="price-background">
+                  <b class="price-placeholder" >Rs.40000</b>
+                  <div class="price-value">
+                    <div class="per-person26">2 person</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="activitycard" onclick="myFunction22()" data-name="Prahlad Nagar" data-list="40">
+            <div class="card-background">
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="card-container">
+                <img
+                  class="card-background-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./Img/2021-10-20.jpg"
+                />
+          
+                <div class="result-details">
+                  <div class="title-elements-parent">
+                    <div class="title-elements">
+                      
+                      <h3 class="ghatlodia2">Vinayak- PG for girls</h3>
+                      <div class="date-details">
+                        <div class="available-icon-wrapper">
+                          <img
+                            class="date-icon"
+                            alt=""
+                            src="./public/vector2.svg"
+                          />
+                        </div>
+                        <div class="months-wrapper">
+                          <div class="months2">4 Months</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="rating-elements">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="valid-date-icon"
+                              alt=""
+                              src="./public/vector3.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transport-details-parent">
+                    
+                      <div class="transport-info">
+                        <div class="transport-wrapper">
+                          <div class="transport2">Transport</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="plan-icon-details">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="plan-tick-icon"
+                              alt=""
+                              src="./public/vector4.svg"
+                            />
+                          </div>
+                        </div>
+                        <div class="student-plan24">Student Plan</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="price-background-wrapper">
+                <div class="price-background">
+                  <b class="price-placeholder" >Rs.60000</b>
+                  <div class="price-value">
+                    <div class="per-person26">3 person</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="activitycard" onclick="myFunction23()" data-name="Prahlad Nagar" data-list="45">
+            <div class="card-background">
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="content-wrapper-child"></div>
+              <div class="card-container">
+                <img
+                  class="card-background-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./Img/2023-09-18.jpg"
+                />
+          
+                <div class="result-details">
+                  <div class="title-elements-parent">
+                    <div class="title-elements">
+                      
+                      <h3 class="ghatlodia2">Ambika PG</h3>
+                      <div class="date-details">
+                        <div class="available-icon-wrapper">
+                          <img
+                            class="date-icon"
+                            alt=""
+                            src="./public/vector2.svg"
+                          />
+                        </div>
+                        <div class="months-wrapper">
+                          <div class="months2">6 Months</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="rating-elements">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="valid-date-icon"
+                              alt=""
+                              src="./public/vector3.svg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transport-details-parent">
+                    
+                      <div class="transport-info">
+                        <div class="transport-wrapper">
+                          <div class="transport2">Transport</div>
+                        </div>
+                        <div class="rating-elements-wrapper">
+                          <div class="plan-icon-details">
+                            <div class="valid-date-background"></div>
+                            <img
+                              class="plan-tick-icon"
+                              alt=""
+                              src="./public/vector4.svg"
+                            />
+                          </div>
+                        </div>
+                        <div class="student-plan24">Student Plan</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="price-background-wrapper">
+                <div class="price-background">
+                  <b class="price-placeholder" >Rs.80000</b>
+                  <div class="price-value">
+                    <div class="per-person26">4 person</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="rectangle-parent64">
+        <div class="frame-child234"></div>
+        <div class="footer-container">
+          <div class="footer-content1">
+            <div class="company-info1">
+              <b class="company2">Company</b>
+              <div class="about-us-blog-container1">
+                <p class="all-required-protective"><a href="./about us/main.html">About Us</a></p>
+                <p class="all-required-protective"><a href="#">Blog</a></p>
+                <p class="all-required-protective"><a href="#">Press Room</a></p>
+                <p class="all-required-protective"><a href="#">Carrer</a></p>
+              </div>
+            </div>
+            <div class="company-info1">
+              <b class="company2">Help</b>
+              <div class="about-us-blog-container1">
+                <p class="all-required-protective"><a href="./contect us/contect.html">Contact us</a></p>
+                <p class="all-required-protective"><a href="#">FAQ'S</a></p>
+                <p class="all-required-protective"><a href="#">Tream And Condition</a></p>
+                <p class="all-required-protective"><a href="#">Privacy policy</a></p>
+              </div>
+            </div>
+            <div class="company-info1">
+              <b class="company2">Address</b>
+              <div class="all-required-protective">
+                  <p class="about-us7"><a href="room.html">Indus Uni</a></p>
+              </div>
+              <b class="company2">Phone Num</b>
+              <div class="all-required-protective">
+                  <p class="about-us7"><a href="room.html">08123456789</a></p>
+              </div>
+              <b class="company2">Email id</b>
+              <div class="all-required-protective">
+                  <p class="about-us7"><a href="room.html">indus.inc</a></p>
+              </div>
+          </div>
+            <div class="payment-info">
+              <b class="payment-methods-possible1">Payment methods possible</b>
+              <div class="payment-icons1">
+                <a href="https://www.mastercard.co.in/en-in.html">
+                <img
+                  class="image-28-icon1"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-28@2x.png"
+                />
+              </a>
+
+              <a href="https://visa.co.in/">
+                <img
+                  class="image-28-icon1"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-29@2x.png"
+                />
+                </a>
+
+
+                <a href="https://www.apple.com/?afid=p239%7C2055067&cid=aos-us-aff-ir-2055067">
+                <img
+                  class="image-28-icon1"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-35@2x.png"
+                />
+                </a>
+                <a href="https://www.paypal.com/in/home">
+                <img
+                  class="image-28-icon1"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-36@2x.png"
+                />
+              </a>
+
+              <a href="https://stripe.com/in">
+                <img
+                  class="image-28-icon1"
+                  alt=""
+                  src="./Img/images (1).png"
+                />
+              </a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="copyright-child"></div>
+          <div class="copyright-info">
+            <div class="copyright-2021-tour">
+              Copyright 2024 Dhrumil Patel. All Rights Reserved
+            </div>
+          </div>
+          <a href="https://www.facebook.com">
+          <div class="helpful-button">
+            <img
+              class="copyright-item"
+              loading="lazy"
+              alt=""
+              src="./public/group-87.svg"
+            />
+          </a>
+          <a href="https://x.com/">
+            <img
+              class="copyright-item"
+              loading="lazy"
+              alt=""
+              src="./public/group-88.svg"
+            />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img
+              class="copyright-item"
+              loading="lazy"
+              alt=""
+              src="./public/group-89.svg"
+            />
+          </a>
+          <a href="https://www.linkedin.com/feed/">
+            <img
+              class="copyright-item"
+              loading="lazy"
+              alt=""
+              src="./Img/toppng.com-linkedin-logo-png-image-800x800.png"
+            />
+          </a>
+            </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="city-listing.js"></script>
+  <script>
+    function myFunction1() {
+      location.assign("room1.html")
+    }
+    </script>
+    <script src="city-listing.js"></script>
+    <script>
+      function myFunction() {
+        location.assign("room.html")
+      }
+      </script>
+      <script src="city-listing.js"></script>
+      <script>
+        function myFunction2() {
+          location.assign("room2.html")
+        }
+        </script>
+              <script src="city-listing.js"></script>
+              <script>
+                function myFunction3() {
+                  location.assign("room3.html")
+                }
+                </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction4() {
+         location.assign("room4.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction5() {
+         location.assign("room5.html")
+       }
+       </script>  
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction6() {
+         location.assign("room6.html")
+       }
+       </script>   
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction7() {
+         location.assign("room7.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction8() {
+         location.assign("room8.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction9() {
+         location.assign("room9.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction10() {
+         location.assign("room10.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction11() {
+         location.assign("room11.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction12() {
+         location.assign("room12.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction13() {
+         location.assign("room13.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction14() {
+         location.assign("room14.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction15() {
+         location.assign("room15.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction16() {
+         location.assign("room16.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction17() {
+         location.assign("room17.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction18() {
+         location.assign("room18.html")
+       }
+       </script>
+     <script src="city-listing.js"></script>
+     <script>
+       function myFunction19() {
+         location.assign("room19.html")
+       }
+       </script>
+       <script>
+        function myFunction20() {
+          location.assign("room20.html")
+        }
+        </script>
+        <script>
+          function myFunction21() {
+            location.assign("room21.html")
+          }
+          </script>
+          <script>
+            function myFunction22() {
+              location.assign("room22.html")
+            }
+            </script>
+            <script>
+              function myFunction23() {
+                location.assign("room23.html")
+              }
+              </script>
+     <script src="city-listing.js"></script>
+ 
+   <script>   
+      let menu = document.getElementById("menu7")
+      console.log(menu)
+      function toggelMenu(){
+          menu.classList.toggle("open-menu")
+      }
+  </script>
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <script src="https://mediafiles.botpress.cloud/4748caf7-f440-4136-bad1-2507c4b7ef04/webchat/config.js" defer></script>
+</html>
