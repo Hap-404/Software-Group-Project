@@ -48,7 +48,7 @@
         <div class="contact-form">
             <h2>Contact Us</h2>
             <p>Any questions or remarks? Just write us a message!</p>
-            <form action="#" method="post">
+            <form id="contactForm" action="index.html" method="post">
                 <div class="form-group">
                     <input type="text" name="first_name" placeholder="First Name" required>
                     <input type="text" name="last_name" placeholder="Last Name" required>
@@ -71,6 +71,13 @@
                 </div>
                 <button type="submit">Send Message</button>
             </form>
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+                    // Optionally, you can add form validation or other logic here
+                    window.location.href = 'http://127.0.0.1:5501/index.html'; // Redirect to home page
+                });
+            </script>
         </div>
     </section>
 
