@@ -496,8 +496,8 @@ button.active{
   justify-content: flex-start;
   gap: 74px;
   max-width: 100%;
-  margin-left: 300px;
-
+  margin-left: 250px;
+  /* background-color: #333; */
 }
 .goa,
 .search-inputs-wrapper {
@@ -525,7 +525,7 @@ button.active{
   min-width: 1200px;
   width: 100%;
   /* background-color: red; */
-  margin: 10px -30px;
+  margin: 10px -1px;
   padding: 8px;
   float: center;
  
