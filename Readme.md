@@ -4,7 +4,7 @@ Are you far from your hometown and need to find a place to stay? Are you a colle
 
 Let Niwas Saathi help you find a place to stay.
 
-![Niwas Saathi](https://github.com/user-attachments/assets/6ca0ceda-26a0-48d9-a713-edb41856d954)
+![Niwas-Saathi](https://github.com/user-attachments/assets/42ddaa2f-f6e2-40bf-b2b7-280fe9831480)
 
 
 # To Clone the Repository:
