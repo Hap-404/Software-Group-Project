@@ -1,0 +1,110 @@
+ A feature-rich platform designed to manage hostel and PG accommodations efficiently. This system offers advanced search and filter options, detailed room and hostel listings, real-time booking, referrals ,User Authentication , social features and Online payment , Complaint and Feedback section, Rent due system.
+
+
+Tech Stacks: MERN, AI, AUTHENTICATION, CLoud Services, Figma for design,
+
+
+
+> Hostel and pg management:
+  Features: 
+  > student and rent owner login
+  > Ai for finding for best pg
+  > Pg reviews + Room Allocation and Management
+  > Rent due system
+  > Online rent payment
+  > online booking
+  > Options(Enquiry or booking)
+  > Online book or room visit
+  > Room allocation
+  > Complaint section for both students and rent owner
+  > Feedback management about room
+  > Food required or not
+  > Area Information for students
+  > Nearest pg finder from college using AI
+  >  Advanced Search and Filter Options
+  > Room and hostel review
+  > Booking and Reservation Management
+  > Referral  discount
+  >  Social Features and Community Building (optional (For outsider student))\
+  > 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Hostel and PG Management System is a comprehensive platform designed to streamline the management of hostels and paying guest accommodations. It offers a dual login feature for students and rent owners, enhancing the user experience for both parties. Leveraging AI technology, the system aids students in finding the best PG options tailored to their needs, complete with detailed reviews and ratings. Room allocation and management are efficiently handled, ensuring a seamless living experience.
+
+Key features include an intuitive rent due system and secure online rent payment options, facilitating hassle-free financial transactions. The system supports online booking, allowing students to either book rooms directly or schedule visits. Enquiry and booking options provide flexibility for prospective tenants. A robust complaint section ensures that both students and rent owners can address issues promptly, fostering a healthy living environment.
+
+The platform includes feedback management to capture and analyze student experiences, enhancing service quality. It offers the option to indicate food requirements, providing an added layer of convenience. Detailed area information helps students familiarize themselves with their new surroundings, while an AI-powered nearest PG finder simplifies the search process.
+
+Advanced search and filter options enable students to narrow down their choices based on specific criteria. The system also features booking and reservation management, referral discounts, and optional social features to build a community for outsider students. This holistic approach ensures an efficient, user-friendly, and engaging experience for all users involved in hostel and PG management.
+
+
+
+
+These innovations can leverage emerging technologies and address additional needs of students and rent owners, creating a more seamless and engaging user experience:
+
+1).AI-Powered Chatbot and Virtual Assistant:
+Implement an AI chatbot to provide 24/7 support for common queries, booking assistance, and personalized recommendations.
+
+2).Community Events and Networking:
+Develop a social platform within the app to organize and promote community events, networking opportunities, and interest-based groups for students. This feature can help build a supportive community, especially for outsider students.
+
+3).AI-Driven Personalized Recommendations:
+Enhance the AI algorithms to provide personalized PG recommendations based on a student’s preferences, past behaviors, and peer reviews.
+
+
+
+
+
+
+Projects:
+> E-commerce website:
+> Hospital services
+> Coupon code finder (e-commerce)
+> Personalized News Aggregator
+> AI-Based Career Guidance Platform
+> AI-Powered Job Recruitment Platform
+> AI-Enhanced Travel Booking System
+
+
+
+
+
+
+
+
+
+
+
+
+A comprehensive platform called Niwas Saathi was created to make managing hostels and paid guest lodgings more efficient. It improves the aid seekers' experience by providing a login feature for students. With the use of artificial intelligence (AI), the system helps students locate the finest hostel/PG options that meet their preferences, along with comprehensive evaluations and ratings. The efficient handling of room distribution and management guarantees a smooth living environment.
